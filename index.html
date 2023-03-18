@@ -6,59 +6,278 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>Bootstrap 101 Template</title>
 		
-    		<!-- Bootstrap -->
-      		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-		<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    	<!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+			<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bahiana&display=swap" rel="stylesheet">
+			
+			<style>
+			
+				.navbar-brand{
+					font-size: 2.0em;
+				}
+				
+				#topContainer{
+					background-image:url("App_image.PNG"); 
+					width: 100%;
+					height: 400px;
+					background-size: cover;
+				}
+				
+				#topRow h1{  
+					font-size:400%;
+				}
+				
+				.lead{
+					font-weight:bold;
+				}
+				
+				
+				#mailing-list{
+					margin-top: 60px;
+					font-weight: bold;
+					font-size:1.7em;
+				}
+				
+				.paddingTop{
+					margin:15px;
+				}
+				
+				body{
+					background-color:#4D455D;
+				}
+				
+				.navbar{
+					font-family: 'Bahiana', cursive;
+					font-size: 1.5em;
+					padding-top:20px;
+				}
+				
+				.app-logo{
+					height:10%;
+					width:10%;
+				}
+								
+				#app_text{
+					font-family: 'Bahiana', cursive;
+					font-size: 6.0em;
+					margin:0;
+					color: #e96479;
+				}
+				
+				.navbar-brand{
+					color: #e96479;
+				}
+				 
+				.btn-login{
+					font-size:0.8em;
+				}
+				
+				#more-info{
+					font-size:1.5em;
+					margin-top: 700px;
+					color:#f5e9cf;
+				}
+				
+				.logo-color{
+					color: #e96479;
+				}
+				
+				#emphasis{
+					font-size: 1.2em;
+				}
+				
+				.title{
+				margin-top: 20px;
+				font-size:1.7em; 
+				}
+				
+				.btn-large{
+					margin-top:20px;
+				}
+				
+				.center-title{
+					margin-top:60px;
+					font-size:1.5em;
+					font-weight: bold;
+				}
+			</style>
 	</head>
 	<body>
 		
-		<div class="navbar navbar-default">
+		<div class="navbar navbar-expand-lg bg-body-tertiary navbar-fixed">
 		
 			<div class="container">
 				
 				<div class="nav-bar header">
 				
-					<a href="" class="navbar-brand">FOUR: The Dating App that gives you more from less.</a>
-					
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
 					 
 						<span class="sr-only">Toggle navigation</span>
                         
 						<span class="icon-bar"></span>
-              					<span class="icon-bar"></span>
-              					<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 
 					</button>
-				
+					
 				</div>
 				
-				<div class="collapse navbar-collapse">
 				
-					<ul class="nav navbar-nav">
-					
-						<li><a href="">Page 1</a></li>
-						
-						<li><a href="">Page 2</a></li>
-						
-						<li><a href="">Page 3</a></li>
-					
-					</ul>
 				
-				</div>
+				<nav class="navbar bg-body-tertiary">
+				
+					<div class="container-fluid collapse navbar-collapse">
+					
+						<a class="navbar-brand" href="#">
+						
+							<img src="IMG_4048.PNG" alt="Logo" class="rounded mx-auto float-start d-inline-block align-text-top" id="logo" alt="..." height="50" width="50" />
+							FOUR
+						</a>
+				
+						<ul class="nav navbar-nav">
+					
+							<li class="active"><a href="#home">Home</a></li>
+						
+							<li><a href="#about">About</a></li>
+						
+							<li><a href="#download">Download Four</a></li>
+					
+						</ul> 
+				
+					</div>
+						
+				</nav>
+				
+				
+				<div class="container-inline">
+				
+					<form class="row g-3">
+					
+						<div class="form-floating col-auto">
+		 
+							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
+							
+							<label for="floatingInput">Email</label>
+						
+						</div>
+						
+						<div class="form-floating col-auto">
+		 
+							<input type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
+							
+							<label for="floatingPassword">Password</label>
+						
+						</div>
+						
+						<div class="col-auto">
+						
+							<button class="btn btn-success btn-login">Log In</button>
+						
+						</div>
+						
+					</div>
+					
+					</form>
 				
 			</div>
 			
 		</div>
 		
-		<h1>Hello, world!</h1>
+		
+		<div class="container text-center" id="logoContainer">
+
+    		<div class="row align-items-center">
+       	<div class="col-md-6 col-md-offset-3">  
+            <img class="" src="IMG_4048.PNG" width="150px" id="logo-image">
+        	</div>
+				<div class="col-md-6 col-md-offset-3">
+					<h3 class="text-center" id="app_text">FOUR</h3>
+				</div>
+    		</div>
+		</div> 
+		
+		
+		<div class="container-fluid text-center" id="topContainer">
+		
+			<div class="row text-center">
+			
+				<div class="col-md-6 col-md-offset-3" id="topRow">
+					
+					<p class="lead title">The Dating App that gives you more from less.</p>
+				 	<p id="more-info">Frustrated with those other dating apps?<br>Feels like no one is interested in anything serious on them?<br>
+				Choice overload and the the constant swiping leaving you burnt-out, wasting your time and leaving you nowhere?<br><br>
+				<span id="emphasis">Let <span class="logo-color">FOUR</span> put an end to all that by giving you the best possible matches right from the start.</span><br><br>
+				Based off our extensive questionnaire and meta data from your social media and other electronic engagement, our AI will scour your information to create a personal profile of all your likes, interests and goals. It will then search through thousands of profiles in your area to show you the <span class="logo-color">FOUR</span> best possible matches with similar interests compatible to your own.<br><br>
+				<span id="emphasis">Don't waste anymore time and head on over to the Apple app store or Google Play to download the best dating app out now to get your <span class="logo-color">FOUR</span> today!</span>
+				</p><br>
+				
+			<div>
+			
+				<img class="" src="IMG_4048.PNG" width="150px" id="logo-image">
+			
+			</div>
+					
+					<p id="mailing-list">Interested? Join our mailing list!</p>
+				
+				</div>
+			
+			</div>
+
+		
+		<form>
+		
+			<div class="input-group">
+			
+				<span class="input-group-addon" id="addon_one">@</span>
+		 
+				<input type="email" class="form-control" id="yourEmail" placeholder="Your Email"/>
+						
+			</div>
+			
+			<div>
+				
+				<button class="btn btn-success btn-large center">Submit</button>
+			
+			</div>
+			
+		</form>
+		
+		<div>
+		
+		
+		</div class="container contentContainer id="footer"">
+		
+			<div class="row">
+			
+				<h1 class="center title">Download the app!</h1>
+				
+				<p class="center"><img src="IMG_4105.PNG" class="appstoreImage" width="200px" height="150px"/>
+			
+			</div>
+		
+		</div>
 		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        	<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files
+as needed -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr .net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    	</body>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+		<script>
+		 
+			$("#topContainer").css("height", $(window).height());
+		
+		</script>
+		
+    </body>
 </html>
